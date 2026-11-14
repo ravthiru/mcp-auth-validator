@@ -1,0 +1,49 @@
+{
+  "name": "mcp-auth-validator",
+  "version": "0.1.0",
+  "description": "Automated OAuth 2.1 compliance and adversarial security testing CLI for Model Context Protocol (MCP) servers",
+  "type": "module",
+  "bin": {
+    "mcp-auth-validator": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "oauth2",
+    "oauth2-1",
+    "security-testing",
+    "authorization",
+    "rfc9728",
+    "jwt",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@hono/node-server": "^2.1.8",
+    "@modelcontextprotocol/client": "^2.4.0",
+    "commander": "^15.1.0",
+    "hono": "^4.13.18",
+    "jose": "^6.2.17",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "fsevents@2.3.3": true
+  }
+}

@@ -1,8 +1,6 @@
 # mcp-auth-validator
 
-[![License: MIT](https://shields.io)](https://opensource.org)
-[![MCP Spec](https://shields.io)](https://modelcontextprotocol.io)
-[![TypeScript](https://shields.io)](https://typescriptlang.org)
+
 
 An automated OAuth 2.1 compliance and adversarial security testing CLI for **Model Context Protocol (MCP)** server implementers.
 
